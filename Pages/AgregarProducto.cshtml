@@ -1,0 +1,27 @@
+@page
+@model TiendaVelozWeb.Pages.AgregarProductoModel
+@{
+    ViewData["Title"] = "Agregar Producto";
+}
+
+<h1>Agregar Producto</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label for="Nombre">Nombre</label>
+        <input type="text" class="form-control" id="Nombre" asp-for="NuevoProducto.Nombre" required>
+    </div>
+    <div class="form-group">
+        <label for="Descripcion">Descripción</label>
+        <input type="text" class="form-control" id="Descripcion" asp-for="NuevoProducto.Descripcion" required>
+    </div>
+    <div class="form-group">
+        <label for="Precio">Precio</label>
+        <input type="number" step="0.01" class="form-control" id="Precio" asp-for="NuevoProducto.Precio" required>
+    </div>
+    <div class="form-group">
+        <label for="Categoria">Categoría</label>
+        <input type="text" class="form-control" id="Categoria" asp-for="NuevoProducto.Categoria" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Agregar</button>
+</form>

@@ -1,0 +1,147 @@
+@page
+@model TiendaVelozWeb.Pages.ProductosModel
+@{
+    ViewData["Title"] = "Productos";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product-card h3 {
+            margin: 10px 0;
+            color: #555;
+        }
+        .product-card p {
+            margin: 5px 0;
+            color: #777;
+        }
+        .product-card .price {
+            font-weight: bold;
+            color: #333;
+        }
+        .product-card .stock {
+            color: #888;
+        }
+        .btn-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>La tienda más veloz</h1>
+        <h2>Seleccione Trabajador</h2>
+        <form method="get">
+            <select asp-for="SelectedTrabajadorId" onchange="this.form.submit()" class="form-control">
+                <option value="">Seleccione un trabajador</option>
+                @foreach (var trabajador in Model.Trabajadores)
+                {
+                    <option value="@trabajador.ID_Trabajador">@trabajador.Nombre @trabajador.Apellido</option>
+                }
+            </select>
+        </form>
+
+        @if (Model.SelectedTrabajadorId > 0)
+        {
+            <div class="btn-group">
+                <a asp-page="/AgregarProducto" class="btn btn-primary">Agregar</a>
+                <a asp-page="/EditarProducto" class="btn btn-warning">Editar</a>
+                <a asp-page="/EliminarProducto" class="btn btn-danger">Eliminar</a>
+            </div>
+
+            <h3>Ventas</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID Venta</th>
+                        <th>Fecha</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var venta in Model.Ventas)
+                    {
+                        <tr>
+                            <td>@venta.ID_Venta</td>
+                            <td>@venta.FechaVenta.ToShortDateString()</td>
+                            <td>@venta.TotalVenta.ToString("C")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <h3>Facturas</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID Factura</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var factura in Model.Facturas)
+                    {
+                        <tr>
+                            <td>@factura.ID_Factura</td>
+                            <td>@factura.Detalle</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <div class="product-grid">
+                @foreach (var producto in Model.Productos)
+                {
+                    <div class="product-card">
+                        <img src="@producto.ImagenURL" alt="@producto.Nombre">
+                        <h3>@producto.Nombre</h3>
+                        <p class="price">Precio: @producto.Precio.ToString("C")</p>
+                        <p class="stock">Stock: @producto.Cantidad</p>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</body>
+</html>

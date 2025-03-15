@@ -1,0 +1,25 @@
+@page
+@model TiendaVelozWeb.Pages.RealizarVentaModel
+@{
+    ViewData["Title"] = "Realizar Venta";
+}
+
+<h1>Realizar Venta</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="TrabajadorId" />
+    <div class="form-group">
+        <label for="ProductoId">Producto</label>
+        <select class="form-control" asp-for="ProductoId" required>
+            @foreach (var producto in Model.Productos)
+            {
+                <option value="@producto.ID_Producto">@producto.Nombre (Stock: @producto.Cantidad)</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Cantidad">Cantidad</label>
+        <input type="number" class="form-control" asp-for="Cantidad" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Realizar Venta</button>
+</form>
