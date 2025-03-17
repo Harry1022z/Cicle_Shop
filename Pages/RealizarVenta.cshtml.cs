@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using MySql.Data.MySqlClient;
+using System.Collections.Generic;
+using TiendaVelozWeb.Models; // Asegúrate de que esta directiva esté presente
 
 namespace TiendaVelozWeb.Pages
 {
@@ -15,7 +17,7 @@ namespace TiendaVelozWeb.Pages
         [BindProperty]
         public int Cantidad { get; set; }
 
-        public List<Producto> Productos { get; set; } = new List<Producto>();
+        public List<ProductoVenta> Productos { get; set; } = new List<ProductoVenta>();
 
         public void OnGet()
         {
@@ -26,7 +28,7 @@ namespace TiendaVelozWeb.Pages
                 var reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    Productos.Add(new Producto
+                    Productos.Add(new ProductoVenta
                     {
                         ID_Producto = reader.GetInt32("ID_Producto"),
                         Nombre = reader.GetString("Nombre"),
@@ -58,5 +60,13 @@ namespace TiendaVelozWeb.Pages
 
             return RedirectToPage("/Productos", new { SelectedTrabajadorId = TrabajadorId });
         }
+    }
+
+    // Clase simplificada para la venta
+    public class ProductoVenta
+    {
+        public int ID_Producto { get; set; }
+        public string Nombre { get; set; } = string.Empty;
+        public int Cantidad { get; set; }
     }
 }

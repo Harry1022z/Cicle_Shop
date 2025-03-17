@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using MySql.Data.MySqlClient;
+using System;
+using TiendaVelozWeb.Models;
 
-namespace TiendaVelozWeb.Pages
+namespace TiendaVelozWeb.Pages // Asegúrate de que el espacio de nombres sea correcto
 {
     public class EditarProductoModel : PageModel
     {
@@ -36,7 +38,7 @@ namespace TiendaVelozWeb.Pages
 
         public IActionResult OnPost()
         {
-            if (!ModelState.IsValid)
+            if (!ModelState.IsValid || Producto is null)
             {
                 return Page();
             }
@@ -45,16 +47,12 @@ namespace TiendaVelozWeb.Pages
             {
                 connection.Open();
                 var command = new MySqlCommand("UPDATE Productos SET Nombre = @Nombre, Descripcion = @Descripcion, Precio = @Precio, Categoria = @Categoria WHERE ID_Producto = @Id", connection);
-                if (Producto == null)
-                {
-                    throw new InvalidOperationException("Producto cannot be null.");
-                }
 
-                command.Parameters.AddWithValue("@Nombre", Producto.Nombre);
-                command.Parameters.AddWithValue("@Descripcion", Producto.Descripcion);
-                command.Parameters.AddWithValue("@Precio", Producto.Precio);
-                command.Parameters.AddWithValue("@Categoria", Producto.Categoria);
-                command.Parameters.AddWithValue("@Id", Producto.ID_Producto);
+                command.Parameters.AddWithValue("@Nombre", Producto!.Nombre);
+                command.Parameters.AddWithValue("@Descripcion", Producto!.Descripcion);
+                command.Parameters.AddWithValue("@Precio", Producto!.Precio);
+                command.Parameters.AddWithValue("@Categoria", Producto!.Categoria);
+                command.Parameters.AddWithValue("@Id", Producto!.ID_Producto);
                 command.ExecuteNonQuery();
             }
 

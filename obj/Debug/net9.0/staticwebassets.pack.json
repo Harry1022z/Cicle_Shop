@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\images\\782dbedf-3d1b-4d19-afe3-7f2af95b4a14_Korycita.jpg",
+      "PackagePath": "staticwebassets\\images\\782dbedf-3d1b-4d19-afe3-7f2af95b4a14_Korycita.jpg"
+    },
+    {
       "Id": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\images\\banda_cardiaca.png",
       "PackagePath": "staticwebassets\\images\\banda_cardiaca.png"
     },
@@ -55,6 +59,10 @@
     {
       "Id": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\images\\pegante_aluminio.png",
       "PackagePath": "staticwebassets\\images\\pegante_aluminio.png"
+    },
+    {
+      "Id": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\images\\persona.png",
+      "PackagePath": "staticwebassets\\images\\persona.png"
     },
     {
       "Id": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\images\\porta_bicicletas.png",

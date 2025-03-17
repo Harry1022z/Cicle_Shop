@@ -30,6 +30,17 @@
             text-align: center;
             color: #333;
         }
+        .trabajador-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .trabajador-imagen {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+            margin-bottom: 10px;
+        }
         .product-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -84,10 +95,17 @@
 
         @if (Model.SelectedTrabajadorId > 0)
         {
+            var trabajadorSeleccionado = Model.Trabajadores.FirstOrDefault(t => t.ID_Trabajador == Model.SelectedTrabajadorId);
+            if (trabajadorSeleccionado != null)
+            {
+                <div class="trabajador-info">
+                    <img src="@trabajadorSeleccionado.ImagenURL" alt="@trabajadorSeleccionado.Nombre @trabajadorSeleccionado.Apellido" class="trabajador-imagen">
+                    <h3>@trabajadorSeleccionado.Nombre @trabajadorSeleccionado.Apellido</h3>
+                </div>
+            }
+
             <div class="btn-group">
                 <a asp-page="/AgregarProducto" class="btn btn-primary">Agregar</a>
-                <a asp-page="/EditarProducto" class="btn btn-warning">Editar</a>
-                <a asp-page="/EliminarProducto" class="btn btn-danger">Eliminar</a>
             </div>
 
             <h3>Ventas</h3>
@@ -138,6 +156,10 @@
                         <h3>@producto.Nombre</h3>
                         <p class="price">Precio: @producto.Precio.ToString("C")</p>
                         <p class="stock">Stock: @producto.Cantidad</p>
+                        <div class="btn-group">
+                            <a asp-page="/EditarProducto" asp-route-id="@producto.ID_Producto" class="btn btn-warning">Editar</a>
+                            <a asp-page="/EliminarProducto" asp-route-id="@producto.ID_Producto" class="btn btn-danger">Eliminar</a>
+                        </div>
                     </div>
                 }
             </div>

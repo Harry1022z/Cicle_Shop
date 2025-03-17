@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TiendaVelozWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+084aab17cdcbd38c05969aa03271873d73ac1e7a")]
 [assembly: System.Reflection.AssemblyProductAttribute("TiendaVelozWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TiendaVelozWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bd5BlM0N/qLRDn43QxbfzusYpH+rgr5jTKo+xE/FeFM=",
+  "Hash": "va3855ueXMaGdVQQFzO2FFWId43fjJs+eXtMpm7zO5c=",
   "Source": "TiendaVelozWeb",
   "BasePath": "_content/TiendaVelozWeb",
   "Mode": "Default",
@@ -1445,6 +1445,27 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\images\\782dbedf-3d1b-4d19-afe3-7f2af95b4a14_Korycita.jpg",
+      "SourceId": "TiendaVelozWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\",
+      "BasePath": "_content/TiendaVelozWeb",
+      "RelativePath": "images/782dbedf-3d1b-4d19-afe3-7f2af95b4a14_Korycita#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5y38o9op4f",
+      "Integrity": "A56VKTrF2hakbOC4Rb0NMMkuhJpfFo7yLiJsEkVfqrk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\782dbedf-3d1b-4d19-afe3-7f2af95b4a14_Korycita.jpg"
+    },
+    {
       "Identity": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\images\\banda_cardiaca.png",
       "SourceId": "TiendaVelozWeb",
       "SourceType": "Discovered",
@@ -1674,6 +1695,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\pegante_aluminio.png"
+    },
+    {
+      "Identity": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\images\\persona.png",
+      "SourceId": "TiendaVelozWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\",
+      "BasePath": "_content/TiendaVelozWeb",
+      "RelativePath": "images/persona#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9qou80ompo",
+      "Integrity": "seB+OC8lwkc3f6eEXndb3B7X/XJ3xZyfw7R9wgf5o1w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\persona.png"
     },
     {
       "Identity": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\images\\porta_bicicletas.png",
@@ -3639,6 +3681,88 @@
       ]
     },
     {
+      "Route": "images/782dbedf-3d1b-4d19-afe3-7f2af95b4a14_Korycita.5y38o9op4f.jpg",
+      "AssetFile": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\images\\782dbedf-3d1b-4d19-afe3-7f2af95b4a14_Korycita.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "267199"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A56VKTrF2hakbOC4Rb0NMMkuhJpfFo7yLiJsEkVfqrk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Mar 2025 20:01:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5y38o9op4f"
+        },
+        {
+          "Name": "label",
+          "Value": "images/782dbedf-3d1b-4d19-afe3-7f2af95b4a14_Korycita.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-A56VKTrF2hakbOC4Rb0NMMkuhJpfFo7yLiJsEkVfqrk="
+        }
+      ]
+    },
+    {
+      "Route": "images/782dbedf-3d1b-4d19-afe3-7f2af95b4a14_Korycita.jpg",
+      "AssetFile": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\images\\782dbedf-3d1b-4d19-afe3-7f2af95b4a14_Korycita.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "267199"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A56VKTrF2hakbOC4Rb0NMMkuhJpfFo7yLiJsEkVfqrk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Mar 2025 20:01:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-A56VKTrF2hakbOC4Rb0NMMkuhJpfFo7yLiJsEkVfqrk="
+        }
+      ]
+    },
+    {
       "Route": "images/banda_cardiaca.jti0ru46r8.png",
       "AssetFile": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\images\\banda_cardiaca.png",
       "Selectors": [],
@@ -4537,6 +4661,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-tiScsr5wbddbGtGczVf3f2YCsvI6msI5CbfygCRFE1c="
+        }
+      ]
+    },
+    {
+      "Route": "images/persona.9qou80ompo.png",
+      "AssetFile": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\images\\persona.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136038"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"seB+OC8lwkc3f6eEXndb3B7X/XJ3xZyfw7R9wgf5o1w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 21:37:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9qou80ompo"
+        },
+        {
+          "Name": "label",
+          "Value": "images/persona.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-seB+OC8lwkc3f6eEXndb3B7X/XJ3xZyfw7R9wgf5o1w="
+        }
+      ]
+    },
+    {
+      "Route": "images/persona.png",
+      "AssetFile": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\images\\persona.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136038"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"seB+OC8lwkc3f6eEXndb3B7X/XJ3xZyfw7R9wgf5o1w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 21:37:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-seB+OC8lwkc3f6eEXndb3B7X/XJ3xZyfw7R9wgf5o1w="
         }
       ]
     },
