@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using MySql.Data.MySqlClient;
 using System.Collections.Generic;
-using TiendaVelozWeb.Models; // Asegúrate de que esta directiva esté presente
+using TiendaVelozWeb.Models;
 
 namespace TiendaVelozWeb.Pages
 {
@@ -44,13 +44,13 @@ namespace TiendaVelozWeb.Pages
             {
                 connection.Open();
 
-                // Actualizar el stock
+
                 var updateStockCommand = new MySqlCommand("UPDATE Stock SET Cantidad = Cantidad - @Cantidad WHERE ID_Producto = @ProductoId", connection);
                 updateStockCommand.Parameters.AddWithValue("@Cantidad", Cantidad);
                 updateStockCommand.Parameters.AddWithValue("@ProductoId", ProductoId);
                 updateStockCommand.ExecuteNonQuery();
 
-                // Registrar la venta
+
                 var insertVentaCommand = new MySqlCommand("INSERT INTO Ventas (ID_Trabajador, FechaVenta, TotalVenta) VALUES (@TrabajadorId, NOW(), (SELECT Precio * @Cantidad FROM Productos WHERE ID_Producto = @ProductoId))", connection);
                 insertVentaCommand.Parameters.AddWithValue("@TrabajadorId", TrabajadorId);
                 insertVentaCommand.Parameters.AddWithValue("@ProductoId", ProductoId);
@@ -61,8 +61,6 @@ namespace TiendaVelozWeb.Pages
             return RedirectToPage("/Productos", new { SelectedTrabajadorId = TrabajadorId });
         }
     }
-
-    // Clase simplificada para la venta
     public class ProductoVenta
     {
         public int ID_Producto { get; set; }

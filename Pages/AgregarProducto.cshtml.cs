@@ -12,7 +12,7 @@ namespace TiendaVelozWeb.Pages
         public Producto NuevoProducto { get; set; } = new Producto();
 
         [BindProperty]
-        public int StockInicial { get; set; } // Propiedad para el stock inicial
+        public int StockInicial { get; set; } 
 
         [BindProperty]
         public IFormFile? Imagen { get; set; }
@@ -34,7 +34,7 @@ namespace TiendaVelozWeb.Pages
             {
                 connection.Open();
 
-                // Insertar el producto en la tabla Productos
+
                 var command = new MySqlCommand("INSERT INTO Productos (Nombre, Descripcion, Precio, Categoria, ImagenURL) VALUES (@Nombre, @Descripcion, @Precio, @Categoria, @ImagenURL);", connection);
                 command.Parameters.AddWithValue("@Nombre", NuevoProducto.Nombre);
                 command.Parameters.AddWithValue("@Descripcion", NuevoProducto.Descripcion);
@@ -43,13 +43,13 @@ namespace TiendaVelozWeb.Pages
                 command.Parameters.AddWithValue("@ImagenURL", imagenUrl);
                 command.ExecuteNonQuery();
 
-                // Obtener el ID del producto recién insertado
+
                 var idProducto = (int)command.LastInsertedId;
 
-                // Insertar el stock inicial en la tabla Stock
+
                 var stockCommand = new MySqlCommand("INSERT INTO Stock (ID_Producto, Cantidad, FechaActualizacion) VALUES (@ID_Producto, @Cantidad, NOW());", connection);
                 stockCommand.Parameters.AddWithValue("@ID_Producto", idProducto);
-                stockCommand.Parameters.AddWithValue("@Cantidad", StockInicial); // Usar el stock inicial ingresado
+                stockCommand.Parameters.AddWithValue("@Cantidad", StockInicial);
                 stockCommand.ExecuteNonQuery();
             }
 

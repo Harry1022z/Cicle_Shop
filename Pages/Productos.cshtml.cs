@@ -4,7 +4,7 @@ using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using TiendaVelozWeb.Models; // Referencia al espacio de nombres de los modelos
+using TiendaVelozWeb.Models;
 
 namespace TiendaVelozWeb.Pages
 {
@@ -26,7 +26,7 @@ namespace TiendaVelozWeb.Pages
         {
             connection.Open();
 
-            // Cargar productos con su stock inicial
+
             var command = new MySqlCommand("SELECT p.ID_Producto, p.Nombre, p.Descripcion, p.Precio, p.Categoria, p.ImagenURL, s.Cantidad AS StockInicial FROM Productos p JOIN Stock s ON p.ID_Producto = s.ID_Producto", connection);
             using (var reader = command.ExecuteReader())
             {
@@ -46,7 +46,7 @@ namespace TiendaVelozWeb.Pages
                 }
             }
 
-            // Cargar trabajadores con su imagen de perfil
+
             command = new MySqlCommand("SELECT ID_Trabajador, Nombre, Apellido, ImagenURL FROM Trabajadores", connection);
             using (var reader = command.ExecuteReader())
             {
@@ -62,10 +62,9 @@ namespace TiendaVelozWeb.Pages
                 }
             }
 
-            // Cargar ventas y facturas si se selecciona un trabajador
+
             if (SelectedTrabajadorId > 0)
             {
-                // Cargar ventas del trabajador seleccionado
                 command = new MySqlCommand("SELECT ID_Venta, FechaVenta, TotalVenta FROM Ventas WHERE ID_Trabajador = @ID_Trabajador", connection);
                 command.Parameters.AddWithValue("@ID_Trabajador", SelectedTrabajadorId);
                 using (var reader = command.ExecuteReader())
@@ -81,7 +80,7 @@ namespace TiendaVelozWeb.Pages
                     }
                 }
 
-                // Cargar facturas asociadas a las ventas del trabajador
+
                 command = new MySqlCommand("SELECT f.ID_Factura, f.Detalle FROM Facturas f JOIN Ventas v ON f.ID_Venta = v.ID_Venta WHERE v.ID_Trabajador = @ID_Trabajador", connection);
                 command.Parameters.AddWithValue("@ID_Trabajador", SelectedTrabajadorId);
                 using (var reader = command.ExecuteReader())
@@ -96,7 +95,7 @@ namespace TiendaVelozWeb.Pages
                     }
                 }
 
-                // Calcular el stock disponible en función de las ventas del trabajador
+
                 command = new MySqlCommand("SELECT dv.ID_Producto, SUM(dv.Cantidad) AS CantidadVendida FROM DetalleVenta dv JOIN Ventas v ON dv.ID_Venta = v.ID_Venta WHERE v.ID_Trabajador = @ID_Trabajador GROUP BY dv.ID_Producto", connection);
                 command.Parameters.AddWithValue("@ID_Trabajador", SelectedTrabajadorId);
                 using (var reader = command.ExecuteReader())
@@ -106,7 +105,7 @@ namespace TiendaVelozWeb.Pages
                         var producto = Productos.FirstOrDefault(p => p.ID_Producto == reader.GetInt32("ID_Producto"));
                         if (producto != null)
                         {
-                            producto.Cantidad -= reader.GetInt32("CantidadVendida"); // Actualizar el stock
+                            producto.Cantidad -= reader.GetInt32("CantidadVendida");
                         }
                     }
                 }
@@ -115,7 +114,7 @@ namespace TiendaVelozWeb.Pages
     }
     catch (Exception ex)
     {
-        // Manejo de errores
+
         Console.WriteLine($"Error: {ex.Message}");
     }
 }

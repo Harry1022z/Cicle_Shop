@@ -4,7 +4,7 @@ using MySql.Data.MySqlClient;
 using System;
 using TiendaVelozWeb.Models;
 
-namespace TiendaVelozWeb.Pages // Asegúrate de que el espacio de nombres sea correcto
+namespace TiendaVelozWeb.Pages
 {
     public class EditarProductoModel : PageModel
     {
