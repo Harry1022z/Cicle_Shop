@@ -24,6 +24,30 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 14 Mar 2025 04:05:54 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TiendaVelozWeb/images/4d6c030b-7f6b-488f-b0e1-b5d60b298173_animeko.4c9rhobfe4.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4d6c030b-7f6b-488f-b0e1-b5d60b298173_animeko.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4c9rhobfe4"},{"Name":"integrity","Value":"sha256-BOlvOuT0xCZxHkSTmGURk1jDlB3Gvewv1bw6TkVA2o0="},{"Name":"label","Value":"_content/TiendaVelozWeb/images/4d6c030b-7f6b-488f-b0e1-b5d60b298173_animeko.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"59849"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022BOlvOuT0xCZxHkSTmGURk1jDlB3Gvewv1bw6TkVA2o0=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 19:30:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TiendaVelozWeb/images/4d6c030b-7f6b-488f-b0e1-b5d60b298173_animeko.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4d6c030b-7f6b-488f-b0e1-b5d60b298173_animeko.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-BOlvOuT0xCZxHkSTmGURk1jDlB3Gvewv1bw6TkVA2o0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"59849"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022BOlvOuT0xCZxHkSTmGURk1jDlB3Gvewv1bw6TkVA2o0=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 19:30:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TiendaVelozWeb/images/7723ddf2-7c63-45a2-911c-5215168ce500_kit_reparacion.hezrm92udv.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\7723ddf2-7c63-45a2-911c-5215168ce500_kit_reparacion.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hezrm92udv"},{"Name":"integrity","Value":"sha256-B9ol7u46bKvWgfHd\u002BXFsf4tWZyjWDqIcv4jk5x7h6Eg="},{"Name":"label","Value":"_content/TiendaVelozWeb/images/7723ddf2-7c63-45a2-911c-5215168ce500_kit_reparacion.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"280361"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022B9ol7u46bKvWgfHd\u002BXFsf4tWZyjWDqIcv4jk5x7h6Eg=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 19:31:59 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TiendaVelozWeb/images/7723ddf2-7c63-45a2-911c-5215168ce500_kit_reparacion.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\7723ddf2-7c63-45a2-911c-5215168ce500_kit_reparacion.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-B9ol7u46bKvWgfHd\u002BXFsf4tWZyjWDqIcv4jk5x7h6Eg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"280361"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022B9ol7u46bKvWgfHd\u002BXFsf4tWZyjWDqIcv4jk5x7h6Eg=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 19:31:59 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/TiendaVelozWeb/images/782dbedf-3d1b-4d19-afe3-7f2af95b4a14_Korycita.5y38o9op4f.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\782dbedf-3d1b-4d19-afe3-7f2af95b4a14_Korycita.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

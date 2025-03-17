@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "va3855ueXMaGdVQQFzO2FFWId43fjJs+eXtMpm7zO5c=",
+  "Hash": "ySBZWRr5pH+xS9Q5AuHQoxNgq2VdsMOQABEjJs9+WPo=",
   "Source": "TiendaVelozWeb",
   "BasePath": "_content/TiendaVelozWeb",
   "Mode": "Default",
@@ -1443,6 +1443,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\images\\4d6c030b-7f6b-488f-b0e1-b5d60b298173_animeko.jpg",
+      "SourceId": "TiendaVelozWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\",
+      "BasePath": "_content/TiendaVelozWeb",
+      "RelativePath": "images/4d6c030b-7f6b-488f-b0e1-b5d60b298173_animeko#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4c9rhobfe4",
+      "Integrity": "BOlvOuT0xCZxHkSTmGURk1jDlB3Gvewv1bw6TkVA2o0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\4d6c030b-7f6b-488f-b0e1-b5d60b298173_animeko.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\images\\7723ddf2-7c63-45a2-911c-5215168ce500_kit_reparacion.png",
+      "SourceId": "TiendaVelozWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\",
+      "BasePath": "_content/TiendaVelozWeb",
+      "RelativePath": "images/7723ddf2-7c63-45a2-911c-5215168ce500_kit_reparacion#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hezrm92udv",
+      "Integrity": "B9ol7u46bKvWgfHd+XFsf4tWZyjWDqIcv4jk5x7h6Eg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\7723ddf2-7c63-45a2-911c-5215168ce500_kit_reparacion.png"
     },
     {
       "Identity": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\images\\782dbedf-3d1b-4d19-afe3-7f2af95b4a14_Korycita.jpg",
@@ -3677,6 +3719,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0="
+        }
+      ]
+    },
+    {
+      "Route": "images/4d6c030b-7f6b-488f-b0e1-b5d60b298173_animeko.4c9rhobfe4.jpg",
+      "AssetFile": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\images\\4d6c030b-7f6b-488f-b0e1-b5d60b298173_animeko.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59849"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BOlvOuT0xCZxHkSTmGURk1jDlB3Gvewv1bw6TkVA2o0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 19:30:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4c9rhobfe4"
+        },
+        {
+          "Name": "label",
+          "Value": "images/4d6c030b-7f6b-488f-b0e1-b5d60b298173_animeko.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BOlvOuT0xCZxHkSTmGURk1jDlB3Gvewv1bw6TkVA2o0="
+        }
+      ]
+    },
+    {
+      "Route": "images/4d6c030b-7f6b-488f-b0e1-b5d60b298173_animeko.jpg",
+      "AssetFile": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\images\\4d6c030b-7f6b-488f-b0e1-b5d60b298173_animeko.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59849"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BOlvOuT0xCZxHkSTmGURk1jDlB3Gvewv1bw6TkVA2o0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 19:30:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BOlvOuT0xCZxHkSTmGURk1jDlB3Gvewv1bw6TkVA2o0="
+        }
+      ]
+    },
+    {
+      "Route": "images/7723ddf2-7c63-45a2-911c-5215168ce500_kit_reparacion.hezrm92udv.png",
+      "AssetFile": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\images\\7723ddf2-7c63-45a2-911c-5215168ce500_kit_reparacion.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "280361"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B9ol7u46bKvWgfHd+XFsf4tWZyjWDqIcv4jk5x7h6Eg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 19:31:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hezrm92udv"
+        },
+        {
+          "Name": "label",
+          "Value": "images/7723ddf2-7c63-45a2-911c-5215168ce500_kit_reparacion.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-B9ol7u46bKvWgfHd+XFsf4tWZyjWDqIcv4jk5x7h6Eg="
+        }
+      ]
+    },
+    {
+      "Route": "images/7723ddf2-7c63-45a2-911c-5215168ce500_kit_reparacion.png",
+      "AssetFile": "C:\\Users\\nosoy\\Desktop\\Inventario Bicis\\TiendaVelozWeb\\wwwroot\\images\\7723ddf2-7c63-45a2-911c-5215168ce500_kit_reparacion.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "280361"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B9ol7u46bKvWgfHd+XFsf4tWZyjWDqIcv4jk5x7h6Eg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 19:31:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-B9ol7u46bKvWgfHd+XFsf4tWZyjWDqIcv4jk5x7h6Eg="
         }
       ]
     },

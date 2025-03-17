@@ -36,6 +36,42 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4d6c030b-7f6b-488f-b0e1-b5d60b298173_animeko.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>TiendaVelozWeb</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TiendaVelozWeb</BasePath>
+      <RelativePath>images/4d6c030b-7f6b-488f-b0e1-b5d60b298173_animeko.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>4c9rhobfe4</Fingerprint>
+      <Integrity>BOlvOuT0xCZxHkSTmGURk1jDlB3Gvewv1bw6TkVA2o0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4d6c030b-7f6b-488f-b0e1-b5d60b298173_animeko.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\7723ddf2-7c63-45a2-911c-5215168ce500_kit_reparacion.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>TiendaVelozWeb</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TiendaVelozWeb</BasePath>
+      <RelativePath>images/7723ddf2-7c63-45a2-911c-5215168ce500_kit_reparacion.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>hezrm92udv</Fingerprint>
+      <Integrity>B9ol7u46bKvWgfHd+XFsf4tWZyjWDqIcv4jk5x7h6Eg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\7723ddf2-7c63-45a2-911c-5215168ce500_kit_reparacion.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\782dbedf-3d1b-4d19-afe3-7f2af95b4a14_Korycita.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>TiendaVelozWeb</SourceId>
